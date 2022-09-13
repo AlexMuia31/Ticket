@@ -14,6 +14,7 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
 import { CssTextField } from "./CustomeTextbox";
 import { CustomeButton } from "./CustomeButton";
+import { ConnectWallet } from "@thirdweb-dev/react";
 
 const Header = () => {
   return (
@@ -64,11 +65,14 @@ const Header = () => {
                   />
                 </Box>
                 <Box>
-                  <Link href="">
-                    <Typography sx={{ fontWeight: 700, cursor: "pointer" }}>
-                      Events
-                    </Typography>
-                  </Link>
+                  <Typography
+                    sx={{
+                      fontWeight: 700,
+                      cursor: "pointer",
+                    }}
+                  >
+                    Events
+                  </Typography>
                 </Box>
                 <Box>
                   <Typography sx={{ fontWeight: 700, cursor: "pointer" }}>
@@ -81,11 +85,8 @@ const Header = () => {
                   </Typography>
                 </Box>
                 <Box>
-                  <AccountCircleIcon sx={{ cursor: "pointer" }} />
+                  <ConnectWallet accentColor="#f213a4" colorMode="dark" />
                 </Box>
-              </Box>
-              <Box>
-                <CustomeButton>Connect Wallet</CustomeButton>
               </Box>
             </Box>
           </Container>
