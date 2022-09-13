@@ -9,7 +9,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import SearchIcon from "@mui/icons-material/Search";
+
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
 import { CssTextField } from "./CustomeTextbox";
@@ -42,28 +42,6 @@ const Header = () => {
                   justifyContent: "space-between",
                 }}
               >
-                <Box sx={{ width: "45%" }}>
-                  <CssTextField
-                    fullWidth
-                    size="small"
-                    placeholder="Search events"
-                    inputProps={{
-                      sx: {
-                        "&::placeholder": {
-                          color: "#F56868",
-                        },
-                        color: "#fff",
-                      },
-                    }}
-                    InputProps={{
-                      startAdornment: (
-                        <InputAdornment position="start">
-                          <SearchIcon sx={{ color: "white" }} />
-                        </InputAdornment>
-                      ),
-                    }}
-                  />
-                </Box>
                 <Box>
                   <Typography
                     sx={{

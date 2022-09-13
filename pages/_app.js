@@ -1,12 +1,16 @@
 import "../styles/globals.css";
 import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
+import Layout from "../components/Layout/Layout";
 
 const activeChainId = ChainId.Goerli;
 
 function MyApp({ Component, pageProps }) {
-  return (
+  const getLayout = Component.getLayout || ((page) => page);
+  return getLayout(
     <ThirdwebProvider desiredChainId={activeChainId}>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </ThirdwebProvider>
   );
 }

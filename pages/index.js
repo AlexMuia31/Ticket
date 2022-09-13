@@ -4,12 +4,14 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Header from "../components/Navbar/Navbar";
 import { LandingPage } from "../components/LandingPage/LandingPage";
+import Layout from "../components/Layout/Layout";
 
-export default function Home() {
+const Home = () => {
   return (
     <Box>
-      <Header />
       <LandingPage />
     </Box>
   );
-}
+};
+
+export default Home;
