@@ -23,7 +23,7 @@ const Header = () => {
         <Toolbar>
           <Container maxWidth="xl">
             <Box sx={{ display: "flex", alignItems: "center" }}>
-              <Box sx={{ flex: 0.2 }}>
+              <Box sx={{ flex: 0.4 }}>
                 <Link href="/">
                   <Image
                     src="/logo.svg"
@@ -37,30 +37,36 @@ const Header = () => {
               <Box
                 sx={{
                   display: { xs: "none", md: "flex" },
-                  flex: 0.8,
+                  flex: 0.6,
                   alignItems: "center",
                   justifyContent: "space-between",
                 }}
               >
                 <Box>
-                  <Typography
-                    sx={{
-                      fontWeight: 700,
-                      cursor: "pointer",
-                    }}
-                  >
-                    Events
-                  </Typography>
+                  <Link href="/Events">
+                    <Typography
+                      sx={{
+                        fontWeight: 700,
+                        cursor: "pointer",
+                      }}
+                    >
+                      Events
+                    </Typography>
+                  </Link>
                 </Box>
                 <Box>
-                  <Typography sx={{ fontWeight: 700, cursor: "pointer" }}>
-                    Stats
-                  </Typography>
+                  <Link href="/MyTickets">
+                    <Typography sx={{ fontWeight: 700, cursor: "pointer" }}>
+                      My Tickets
+                    </Typography>
+                  </Link>
                 </Box>
                 <Box>
-                  <Typography sx={{ fontWeight: 700, cursor: "pointer" }}>
-                    Create
-                  </Typography>
+                  <Link href="/Create">
+                    <Typography sx={{ fontWeight: 700, cursor: "pointer" }}>
+                      Create
+                    </Typography>
+                  </Link>
                 </Box>
                 <Box>
                   <ConnectWallet accentColor="#f213a4" colorMode="dark" />

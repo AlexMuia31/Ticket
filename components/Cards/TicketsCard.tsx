@@ -63,9 +63,6 @@ export const RegularCard = () => {
           Price: 0.012 ETH
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Buy</Button>
-      </CardActions>
     </Card>
   );
 };

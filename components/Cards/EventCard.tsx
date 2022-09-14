@@ -6,14 +6,12 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import CardActions from "@mui/material/CardActions";
 import { Button } from "@mui/material";
+import Link from "next/link";
 
 export default function EventCard() {
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardHeader
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
-      />
+      <CardHeader title="Event Title" subheader="September 14, 2016" />
       <CardMedia
         component="img"
         height="194"
@@ -28,18 +26,20 @@ export default function EventCard() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button
-          size="small"
-          sx={{
-            bgcolor: "#F213A4",
-            color: "#fff",
-            "&:hover": {
-              backgroundColor: "#F56868",
-            },
-          }}
-        >
-          Buy Tickets
-        </Button>
+        <Link href="/Tickets">
+          <Button
+            size="small"
+            sx={{
+              bgcolor: "#F213A4",
+              color: "#fff",
+              "&:hover": {
+                backgroundColor: "#F56868",
+              },
+            }}
+          >
+            Buy Tickets
+          </Button>
+        </Link>
       </CardActions>
     </Card>
   );

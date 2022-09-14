@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Toolbar } from "@mui/material";
+import { Box, Container, Grid, Toolbar, Typography } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import Divider from "@mui/material/Divider";
@@ -7,10 +7,16 @@ import { TicketsCard, RegularCard, CardVip } from "../Cards/TicketsCard";
 
 const TicketsPage = () => {
   return (
-    <Box>
+    <Box sx={{ minHeight: "100vh", bgcolor: "#DEB6AC" }}>
       <Toolbar />
       <Toolbar />
       <Container maxWidth="xl">
+        <Box sx={{ display: "flex", justifyContent: "center", mb: "2%" }}>
+          {" "}
+          <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+            Name of the Event
+          </Typography>
+        </Box>
         <Grid container justifyContent="center">
           <Grid item>
             <Image src="/poster3.jpeg" width="1000px" height="200px" />
