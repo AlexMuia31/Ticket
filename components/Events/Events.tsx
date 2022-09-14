@@ -1,7 +1,8 @@
-import { Box, Container, InputAdornment, Toolbar } from "@mui/material";
+import { Box, Container, Grid, InputAdornment, Toolbar } from "@mui/material";
 import React from "react";
 import { CssTextField } from "../Navbar/CustomeTextbox";
 import SearchIcon from "@mui/icons-material/Search";
+import EventCard from "../Cards/EventCard";
 
 const EventsPage = () => {
   return (
@@ -32,7 +33,34 @@ const EventsPage = () => {
           />
         </Box>
       </Container>
-      <Container maxWidth="xl">test</Container>
+      <Container maxWidth="xl" sx={{ mt: "2%" }}>
+        <Grid container spacing={3} justifyContent="center">
+          <Grid item>
+            <EventCard />
+          </Grid>
+          <Grid item>
+            <EventCard />
+          </Grid>
+          <Grid item>
+            <EventCard />
+          </Grid>
+          <Grid item>
+            <EventCard />
+          </Grid>
+          <Grid item>
+            <EventCard />
+          </Grid>
+          <Grid item>
+            <EventCard />
+          </Grid>
+          <Grid item>
+            <EventCard />
+          </Grid>
+          <Grid item>
+            <EventCard />
+          </Grid>
+        </Grid>
+      </Container>
     </Box>
   );
 };
