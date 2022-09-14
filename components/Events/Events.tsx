@@ -34,7 +34,7 @@ const EventsPage = () => {
         </Box>
       </Container>
       <Container maxWidth="xl" sx={{ mt: "2%" }}>
-        <Grid container spacing={3} justifyContent="center">
+        <Grid container spacing={3} justifyContent="center" sx={{ pb: "2%" }}>
           <Grid item>
             <EventCard />
           </Grid>
